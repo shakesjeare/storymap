@@ -3,11 +3,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Story Map</title>
     <script>
-        window.location.href = "https://storymaps.arcgis.com/stories/eabc85a617ea4e3b9098afe9d971d91e";
+        // Auto redirect after 3 seconds
+        setTimeout(function() {
+            window.location.href = "https://storymaps.arcgis.com/stories/eabc85a617ea4e3b9098afe9d971d91e";
+        }, 3000);
     </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 100px;
+            background: #f5f5f5;
+        }
+        
+        .loading {
+            font-size: 24px;
+            color: #333;
+        }
+        
+        .countdown {
+            margin-top: 20px;
+            color: #666;
+        }
+    </style>
 <script src="https://puc.poecdn.net/authenticated_preview_page/syncedState.bd4eeeb8e8e02052ee92.js"></script></head>
 <body>
-    <p>Redirecting...</p>
+    <div class="loading">Redirecting to Story Map...</div>
+    <div class="countdown">Auto redirect in 3 seconds</div>
+    <p style="margin-top: 30px;">
+        <a href="https://storymaps.arcgis.com/stories/eabc85a617ea4e3b9098afe9d971d91e">
+            If not redirected automatically, click here
+        </a>
+    </p>
 
 
 </body></html>
